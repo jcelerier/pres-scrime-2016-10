@@ -49,6 +49,7 @@
 \end{frame}
 
 \begin{frame}
+\begin{figure}
 	\begin{columns}
 		\begin{column}{0.5\textwidth}
 			\begin{figure}
@@ -60,9 +61,12 @@
 	\begin{figure}
 		\centering
 		\includegraphics[width=0.9\textwidth]{images/arc3.png}	
+		\vspace{3.5mm}
 	\end{figure}		
 \end{column}
 \end{columns}
+\caption{Objets spatiaux}
+\end{figure}
 \end{frame}
 
 \begin{frame}
@@ -90,19 +94,21 @@
 	\end{figure}
 \end{frame}
 \begin{frame}
-	\frametitle{À venir}    
+	\frametitle{Objectifs}    
 	\Large
 	\begin{itemize}
 		\item En cours : typage des données manipulées.
 		\begin{itemize}
 			\item Implique la conception d'un modèle de calcul~: HSV $\rightarrow$ RGB $\rightarrow$ HSV.
+			\item Graphes dataflow dynamique.
+			\item À terme : temporalité dans les calculs (temps différé, etc.).
 		\end{itemize}
 		~\\
 		\item Problématique de la répartition.
 		\begin{itemize}
 			\item Implémentation de l'exécution sur plusieurs machines.
 			\item Répartition des médias : flux A/V, scènes 3D\dots
-			\item Répartition des programmes : on écrit un calcul dans PureData, et on incorpore une version pré-compilée dans le protocole pour exécution sur embarqué ou dans web.
+			\item Répartition des programmes : on écrit un calcul dans PureData (ou autre), et on incorpore une version pré-compilée dans le protocole pour exécution sur embarqué ou dans web.
 		\end{itemize}
 		
 	\end{itemize}
